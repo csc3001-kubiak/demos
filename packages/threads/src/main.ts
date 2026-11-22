@@ -1,6 +1,6 @@
 import { Worker, isMainThread } from "worker_threads";
 
-const WORKER_FILE = "./dist/worker.js"; // <-- Note: Must be JS file
+const WORKER_FILE = "./dist/fib-worker.js"; // <-- Note: Must be JS file
 
 if (isMainThread) {
   const worker = new Worker(WORKER_FILE);

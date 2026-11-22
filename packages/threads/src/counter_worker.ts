@@ -11,7 +11,7 @@ if (isMainThread) {
   parentPort.on('message', (data) => {
     const { number } = data;
     for (let i = 0; i < number; i++) {
-      sharedArray[0]++;
+      Atomics.add(sharedArray, 0, 1);
     }
 
     process.exit();

@@ -10,7 +10,8 @@
     "rewriteRelativeImportExtensions": true,
     "sourceMap": true,
     "moduleResolution": "bundler",
-    "module": "ESNext"
+    "module": "ESNext",
+    "target": "ESNext"
   },
   "include": ["src/**/*.ts", "src/**/*.js"],
   "exclude": ["node_modules"],

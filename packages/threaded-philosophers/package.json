@@ -1,0 +1,21 @@
+{
+  "name": "threaded-philosophers",
+  "version": "1.0.0",
+  "description": "Demo of NodeJS Worker threads",
+  "keywords": [
+    "threads",
+    "parallel",
+    "nodejs",
+    "dining philosophers",
+    "locks"
+  ],
+  "license": "BSD-3-Clause",
+  "author": "kubiak@calpoly.edu",
+  "type": "module",
+  "main": "src/main.ts",
+  "scripts": {
+    "dev": "npx nodemon",
+    "build": "npx tsc -b && echo Done",
+    "start": "node -r source-map-support/register dist/main.js"
+  }
+}
